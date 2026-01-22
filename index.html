@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Metronom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="metronome-container">
+        <h1>Metronom</h1>
+        
+        <div class="bpm-display">
+            <span id="bpm-value">120</span> <small>BPM</small>
+        </div>
+
+        <input type="range" id="bpm-slider" min="40" max="240" value="120">
+
+        <div class="settings">
+            <label for="time-signature">Taktart:</label>
+            <select id="time-signature">
+                <option value="2">2/4</option>
+                <option value="3">3/4</option>
+                <option value="4" selected>4/4</option>
+                <option value="6">6/8</option>
+            </select>
+        </div>
+
+        <button id="start-stop">START</button>
+        
+        <div class="visual-indicator" id="indicator"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
