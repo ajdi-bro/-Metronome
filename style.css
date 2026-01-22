@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+}
+
+.metronome-container {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+.bpm-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #00d1da;
+}
+
+.visual-indicator {
+    width: 20px;
+    height: 20px;
+    background-color: #444;
+    border-radius: 50%;
+    margin: 20px auto 0;
+}
+
+.pulse {
+    background-color: #00adb5;
+    transform: scale(1.2);
+}
